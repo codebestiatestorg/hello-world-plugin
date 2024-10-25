@@ -1,0 +1,8 @@
+plugins:
+  - skipBotEvents: true
+    uses:
+      # hello-world-plugin
+      - plugin: codebestiatestorg/hello-world-plugin:compute.yml@development
+        runsOn: [ "issue_comment.created" ]
+        with:
+          response: world
